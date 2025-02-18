@@ -12,7 +12,7 @@ function UserLogout() {
     }
    
     
-    axios.get('http://localhost:3002/users/logout',{
+    axios.get('https://ride-booking-backend.onrender.com/users/logout',{
         headers: {
             Authorization: `Bearer ${token}`,
         },
