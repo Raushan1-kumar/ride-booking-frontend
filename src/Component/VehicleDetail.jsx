@@ -88,7 +88,7 @@ function VehicleDetail(props) {
         console.log(props.pickup);
         console.log(props.destination);
       try {
-           await  axios.post('http://localhost:3002/rides/create',{
+           await  axios.post('https://ride-booking-backend.onrender.com/rides/create',{
                user:user,
                pickup:props.pickup,
                distance:distance,
