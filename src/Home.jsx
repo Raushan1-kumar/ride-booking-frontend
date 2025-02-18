@@ -230,10 +230,7 @@ function Home() {
 
     return (
         <>
-        <div className="absolute w-10 h-10 flex justify-center items-center text-xl bg-white rounded-full top-4 right-4" onClick={() => { checknav(); navigate('/captain-login') }}>
-            <i class="fa fa-sign-out" aria-hidden="true"></i>
-                   
-                </div>
+        
             <div>
             
                 <img className="w-12 absolute top-5 left-5"
