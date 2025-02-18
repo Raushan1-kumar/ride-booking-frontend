@@ -10,7 +10,7 @@ function CaptainLogout() {
     }
    
     
-    axios.get('http://localhost:3002/captains/logout',{
+    axios.get('https://ride-booking-backend.onrender.com/captains/logout',{
         headers: {
             Authorization: `Bearer ${token}`,
         },
