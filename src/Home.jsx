@@ -47,7 +47,7 @@ function Home() {
         try {
             // Fetch the distance and duration from the API
             const response = await axios.get(
-                `http://localhost:3002/maps/get-distance?pickupAddress=${pickup}&destinationAddress=${destination}`,
+                `https://ride-booking-backend.onrender.com/maps/get-distance?pickupAddress=${pickup}&destinationAddress=${destination}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -102,7 +102,7 @@ function Home() {
             }
     
             // API call
-            const response = await axios.get(`http://localhost:3002/maps/get-fare`, {
+            const response = await axios.get(`https://ride-booking-backend.onrender.com/maps/get-fare`, {
                 params: { distance },
                 headers: {
                     Authorization: `Bearer ${token}`,
@@ -201,7 +201,7 @@ function Home() {
             return;
         }
         try {
-            const response = await axios.get(`http://localhost:3002/maps/get-suggestion?query=${query}`, {
+            const response = await axios.get(`https://ride-booking-backend.onrender.com/maps/get-suggestion?query=${query}`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`,
             },
