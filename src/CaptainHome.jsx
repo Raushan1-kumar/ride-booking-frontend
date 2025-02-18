@@ -118,7 +118,7 @@ function CaptainHome() {
     
     async function confirmride() {
         const captainId = localStorage.getItem('captainId');
-        const response = await axios.post('http://localhost:3002/rides/confirm', {
+        const response = await axios.post('https://ride-booking-backend.onrender.com/rides/confirm', {
             rideId: ride._id,
             captainId:captainId,
         }, {
@@ -134,7 +134,7 @@ function CaptainHome() {
     const checkOtp = async () => {
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.get('http://localhost:3002/rides/checkOtp', {
+            const response = await axios.get('https://ride-booking-backend.onrender.com/rides/checkOtp', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 },
