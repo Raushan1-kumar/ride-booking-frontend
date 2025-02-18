@@ -14,7 +14,7 @@ function UserLogin() {
         e.preventDefault();
         setLoading(true);
         try {
-            const result = await axios.post('http://localhost:3002/users/login', {
+            const result = await axios.post('https://ride-booking-backend.onrender.com/users/login', {
                 email: email,
                 password: password
             });
