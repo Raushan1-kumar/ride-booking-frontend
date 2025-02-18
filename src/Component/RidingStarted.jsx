@@ -63,7 +63,7 @@ function RidingStarted() {
 
     async function rideEnd() {
         const rideId = localStorage.getItem('rideId');
-        const response = await axios.post('http://localhost:3002/rides/end-ride', {
+        const response = await axios.post('https://ride-booking-backend.onrender.com/rides/end-ride', {
             rideId:rideId,
         }, {
             headers: {
