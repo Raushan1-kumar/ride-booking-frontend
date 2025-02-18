@@ -21,7 +21,7 @@ function CaptainSignup() {
         e.preventDefault();
         setLoading(true);
         try {
-            const result = await axios.post('http://localhost:3002/captains/register', {
+            const result = await axios.post('https://ride-booking-backend.onrender.com/captains/register', {
                 fullName: { firstName, lastName },
                 email,
                 password,
