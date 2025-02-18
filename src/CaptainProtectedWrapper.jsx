@@ -15,7 +15,7 @@ const CaptainProctedWrapper = ({ children }) => {
     },[token])
 
 
-    axios.get('http://localhost:3002/captains/profile',{
+    axios.get('https://ride-booking-backend.onrender.com/captains/profile',{
         headers: {
             Authorization: `Bearer ${token}`,
         },
