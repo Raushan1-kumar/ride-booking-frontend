@@ -16,7 +16,7 @@ function Usersignup() {
     const submitHandler = (e) => {
     setLoading(true);
      e.preventDefault();
-     axios.post('http://localhost:3002/users/register',{
+     axios.post('https://ride-booking-backend.onrender.com/users/register',{
         fullName:{
             firstName:firstName,
             lastName:lastName,
