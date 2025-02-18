@@ -4,7 +4,7 @@ import { io } from 'socket.io-client';
 
 export const SocketContext = createContext();
 
-const socket = io('http://localhost:3002'); // Replace with your server URL
+const socket = io('https://ride-booking-backend.onrender.com'); // Replace with your server URL
 
 const SocketProvider = ({ children }) => {
     useEffect(() => {
